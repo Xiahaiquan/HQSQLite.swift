@@ -1,3 +1,3 @@
 # HQSQLite.swift
 
-User the SQLite.siwft simpler
+User the SQLite.siwft simple
