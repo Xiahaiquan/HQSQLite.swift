@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D66D076212C3405000753D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D66D075212C3405000753D9 /* AppDelegate.swift */; };
+		2D66D078212C3405000753D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D66D077212C3405000753D9 /* ViewController.swift */; };
+		2D66D07B212C3405000753D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D66D079212C3405000753D9 /* Main.storyboard */; };
+		2D66D07D212C3408000753D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D66D07C212C3408000753D9 /* Assets.xcassets */; };
+		2D66D080212C3408000753D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D66D07E212C3408000753D9 /* LaunchScreen.storyboard */; };
+		2D66D099212C3522000753D9 /* SQLiteDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D66D089212C3522000753D9 /* SQLiteDataStore.swift */; };
+		2D66D0A2212C3522000753D9 /* UserinfoDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D66D093212C3522000753D9 /* UserinfoDataHelper.swift */; };
+		2D66D0A6212C3522000753D9 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D66D098212C3522000753D9 /* DataModel.swift */; };
+		2D66D0A8212C36D1000753D9 /* DataHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D66D0A7212C36D1000753D9 /* DataHelperProtocol.swift */; };
+		65355BA0096E0E2D4F2A4B1B /* Pods_HQSQLite_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A076E1992D4676F04BB20E8 /* Pods_HQSQLite_Swift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A076E1992D4676F04BB20E8 /* Pods_HQSQLite_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQSQLite_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D66D072212C3405000753D9 /* HQSQLite-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HQSQLite-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D66D075212C3405000753D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D66D077212C3405000753D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D66D07A212C3405000753D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D66D07C212C3408000753D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D66D07F212C3408000753D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D66D081212C3408000753D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D66D089212C3522000753D9 /* SQLiteDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDataStore.swift; sourceTree = "<group>"; };
+		2D66D093212C3522000753D9 /* UserinfoDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserinfoDataHelper.swift; sourceTree = "<group>"; };
+		2D66D098212C3522000753D9 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		2D66D0A7212C36D1000753D9 /* DataHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelperProtocol.swift; sourceTree = "<group>"; };
+		3C891C3677A00572E1DE42A9 /* Pods-HQSQLite-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQSQLite-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQSQLite-Swift/Pods-HQSQLite-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		EC5132329B2C69F1D5DEA885 /* Pods-HQSQLite-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQSQLite-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQSQLite-Swift/Pods-HQSQLite-Swift.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D66D06F212C3405000753D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65355BA0096E0E2D4F2A4B1B /* Pods_HQSQLite_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D66D069212C3405000753D9 = {
+			isa = PBXGroup;
+			children = (
+				2D66D074212C3405000753D9 /* HQSQLite-Swift */,
+				2D66D073212C3405000753D9 /* Products */,
+				D20893B4B86E66E06C0E8127 /* Pods */,
+				D4C161BBC2D92D4153911837 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D66D073212C3405000753D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D66D072212C3405000753D9 /* HQSQLite-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D66D074212C3405000753D9 /* HQSQLite-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2D66D075212C3405000753D9 /* AppDelegate.swift */,
+				2D66D077212C3405000753D9 /* ViewController.swift */,
+				2D66D087212C3522000753D9 /* DBManager */,
+				2D66D079212C3405000753D9 /* Main.storyboard */,
+				2D66D07C212C3408000753D9 /* Assets.xcassets */,
+				2D66D07E212C3408000753D9 /* LaunchScreen.storyboard */,
+				2D66D081212C3408000753D9 /* Info.plist */,
+			);
+			path = "HQSQLite-Swift";
+			sourceTree = "<group>";
+		};
+		2D66D087212C3522000753D9 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				2D66D088212C3522000753D9 /* Connection */,
+				2D66D08A212C3522000753D9 /* DataHelper */,
+				2D66D097212C3522000753D9 /* Model */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		2D66D088212C3522000753D9 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				2D66D089212C3522000753D9 /* SQLiteDataStore.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		2D66D08A212C3522000753D9 /* DataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2D66D093212C3522000753D9 /* UserinfoDataHelper.swift */,
+				2D66D0A7212C36D1000753D9 /* DataHelperProtocol.swift */,
+			);
+			path = DataHelper;
+			sourceTree = "<group>";
+		};
+		2D66D097212C3522000753D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D66D098212C3522000753D9 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D20893B4B86E66E06C0E8127 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C891C3677A00572E1DE42A9 /* Pods-HQSQLite-Swift.debug.xcconfig */,
+				EC5132329B2C69F1D5DEA885 /* Pods-HQSQLite-Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D4C161BBC2D92D4153911837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A076E1992D4676F04BB20E8 /* Pods_HQSQLite_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D66D071212C3405000753D9 /* HQSQLite-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D66D084212C3408000753D9 /* Build configuration list for PBXNativeTarget "HQSQLite-Swift" */;
+			buildPhases = (
+				486C321F636B13C02E4BA63E /* [CP] Check Pods Manifest.lock */,
+				2D66D06E212C3405000753D9 /* Sources */,
+				2D66D06F212C3405000753D9 /* Frameworks */,
+				2D66D070212C3405000753D9 /* Resources */,
+				8D8D275FD09E406131FA36B2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HQSQLite-Swift";
+			productName = "HQSQLite-Swift";
+			productReference = 2D66D072212C3405000753D9 /* HQSQLite-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D66D06A212C3405000753D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = HaiQuan;
+				TargetAttributes = {
+					2D66D071212C3405000753D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 2D66D06D212C3405000753D9 /* Build configuration list for PBXProject "HQSQLite-Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D66D069212C3405000753D9;
+			productRefGroup = 2D66D073212C3405000753D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D66D071212C3405000753D9 /* HQSQLite-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D66D070212C3405000753D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D66D080212C3408000753D9 /* LaunchScreen.storyboard in Resources */,
+				2D66D07D212C3408000753D9 /* Assets.xcassets in Resources */,
+				2D66D07B212C3405000753D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		486C321F636B13C02E4BA63E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HQSQLite-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8D275FD09E406131FA36B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HQSQLite-Swift/Pods-HQSQLite-Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HQSQLite-Swift/Pods-HQSQLite-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D66D06E212C3405000753D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D66D0A6212C3522000753D9 /* DataModel.swift in Sources */,
+				2D66D078212C3405000753D9 /* ViewController.swift in Sources */,
+				2D66D0A2212C3522000753D9 /* UserinfoDataHelper.swift in Sources */,
+				2D66D099212C3522000753D9 /* SQLiteDataStore.swift in Sources */,
+				2D66D076212C3405000753D9 /* AppDelegate.swift in Sources */,
+				2D66D0A8212C36D1000753D9 /* DataHelperProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D66D079212C3405000753D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D66D07A212C3405000753D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D66D07E212C3408000753D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D66D07F212C3408000753D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D66D082212C3408000753D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D66D083212C3408000753D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D66D085212C3408000753D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C891C3677A00572E1DE42A9 /* Pods-HQSQLite-Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = "HQSQLite-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.Orangetheory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D66D086212C3408000753D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5132329B2C69F1D5DEA885 /* Pods-HQSQLite-Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PPU93XBS4;
+				INFOPLIST_FILE = "HQSQLite-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fendaTeamIOS.Orangetheory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D66D06D212C3405000753D9 /* Build configuration list for PBXProject "HQSQLite-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D66D082212C3408000753D9 /* Debug */,
+				2D66D083212C3408000753D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D66D084212C3408000753D9 /* Build configuration list for PBXNativeTarget "HQSQLite-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D66D085212C3408000753D9 /* Debug */,
+				2D66D086212C3408000753D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D66D06A212C3405000753D9 /* Project object */;
+}
